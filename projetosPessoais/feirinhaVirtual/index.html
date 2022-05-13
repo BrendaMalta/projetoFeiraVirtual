@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="pineapple.ico" type="image/x-icon">
+    <title>Feira da Brenda</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="repeticoes.css">
+</head>
+<body >
+    <header>
+        <h1>SACOLÃO DA BRENDA!</h1>
+        <h5>PRECINHOS CAMARADAS :)</h5>
+        
+    </header>
+    <section>
+        <!--aqui é a div para produtos-->
+        
+        <div id="produtos" style="text-align: center;"> 
+            <h2><b>CARDÁPIO</b></h2>
+            <h3>ESCOLHA A QUANTIDADE:</h3>
+            <h3>preço: R$2 /unidade</h3>
+            
+            <p></p>
+            <p>MAÇÃ <input type="number" name="txtmaca" id="txtmaca" style="width: 3rem;" min="0"> MELANCIA <input type="number" name="txtmelancia" id="txtmelancia" style="width: 3rem;" min="0"></p>
+            <p>PERA <input type="number" name="txtpera" id="txtpera" style="width: 3rem;" min="0"> ABACAXI <input type="number" name="txtabacaxi" id="txtabacaxi" style="width: 3rem;" min="0"></p>
+            <p>MANGA <input type="number" name="txtmanga" id="txtmanga" style="width: 3rem;"min="0"> BANANA <input type="number" name="txtbanana" id="txtbanana" style="width: 3rem;" min="0"></p>
+        </div>
+         
+         <!--aqui é a div para cadastro-->
+         <div id="cadastro">
+            <h2><b>CADASTRO</b></h2>
+            <h3>Digite seus dados:</h3>
+            <p></p>
+            <p>Nome: <input type="text" name="nomeCliente" id="nomeCliente" required></p>
+            <p>Endereço: <input type="text" name="endereco" id="endereco" required></p>
+            <p>Email: <input type="email" required> </p>
+            <p>Forma de Pagamento: 
+                <input type="radio" name="radioPag" id="dinheiro" checked>
+                <label for="dinheiro">Dinheiro</label>
+                <input type="radio" name="radioPag" id="cartao">
+                <label for="cartao">Cartão</label>
+            </p>
+            <p>Telefone para contato: <input type="text" name="telefone" id="telefone" required></p>
+
+        </div>
+        <!--div para finalizar-->
+        <div id="finalPedido" onclick="finalizar()" style="text-align: center;">
+            <input type="button" value="Finalizar Pedido">
+        
+         </div>
+    </section>
+    <footer>
+        <p>@bre.malta</p>
+    </footer>
+    <script src="lojinhaScript.js"></script>
+    
+</body>
+</html>
